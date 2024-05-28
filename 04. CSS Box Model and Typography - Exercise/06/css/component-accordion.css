@@ -1,0 +1,29 @@
+@import url(reset.css);
+@import url(typography.css);
+
+body {
+    padding: 2em;
+}
+
+summary {
+    font-weight: bold;
+}
+
+.content {
+    max-width: 66ch;
+    margin: 0 auto;
+}
+
+.content details {
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+
+summary {
+    list-style-type: '► ';
+   
+  } 
+  
+  details[open] > summary {
+    list-style-type: '▼ ';
+  }
